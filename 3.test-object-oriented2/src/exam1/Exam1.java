@@ -4,16 +4,18 @@ public class Exam1 {
     public static void main(String[] args) {
         
         // SuperCarのメソッド実行
-        Car superCar = new SuperCar();
-        superCar.setName("フェラーリ");
-        superCar.putOnGas();
-        superCar.run();
+        Car car = new Car();
 
+        car = new SuperCar();
+        car.setName("フェラーリ");
+        car.putOnGas();
+        car.run();
+        
         // EcoCarのメソッド実行
-        Car ecoCar = new EcoCar();
-        ecoCar.setName("プリウス");
-        ecoCar.putOnGas();
-        ecoCar.run();
+        car = new EcoCar();
+        car.setName("プリウス");
+        car.putOnGas();
+        car.run();
 
     }
 }
