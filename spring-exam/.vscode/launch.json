@@ -1,0 +1,39 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CardMain",
+            "request": "launch",
+            "mainClass": "q4.CardMain"
+        },
+        {
+            "type": "java",
+            "name": "DuplicateNumber",
+            "request": "launch",
+            "mainClass": "q3.DuplicateNumber"
+        },
+        {
+            "type": "java",
+            "name": "Reverse",
+            "request": "launch",
+            "mainClass": "q2.Reverse"
+        },
+        {
+            "type": "java",
+            "name": "Sum",
+            "request": "launch",
+            "mainClass": "q1.Sum"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ExamWebSpringThymeleafApplication<exam-web-spring-thymeleaf>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.ExamWebSpringThymeleafApplication",
+            "projectName": "exam-web-spring-thymeleaf",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=45587 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=exam-web-spring-thymeleaf"
+        }
+    ]
+}
