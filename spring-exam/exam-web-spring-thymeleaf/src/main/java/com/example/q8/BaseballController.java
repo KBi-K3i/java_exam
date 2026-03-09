@@ -23,9 +23,4 @@ public class BaseballController {
 		return "8/list";
 	}
 	
-	
-
-	
-	
-	
 }

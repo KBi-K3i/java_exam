@@ -20,11 +20,13 @@ public class BaseballRepository {
 		Integer id = rs.getInt("id");
 		String name = rs.getString("name");
 		Date date = rs.getDate("established_date");
-		return new BaseballDomain(id,name,date);
+		Integer stadiumId = rs.getInt("stadium_id");
+		
+		return new BaseballDomain(id,name,date,stadiumId);
 		};
 	
 	public List<BaseballDomain> findAll(){
-		String sql = "SELECT id,name,established_date FROM teams ORDER BY established_date ASC";
+		String sql = "SELECT id,name,established_date,stadium_id FROM teams ORDER BY established_date ASC";
 		
 		List<BaseballDomain> baseballDomainList = template.query(sql, baseballDomainRowMapper);
 		

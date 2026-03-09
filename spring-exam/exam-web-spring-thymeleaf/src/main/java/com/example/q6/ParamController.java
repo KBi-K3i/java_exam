@@ -17,11 +17,16 @@ public class ParamController {
 	@RequestMapping(value="/q6")
 	public String gotoq6(String linkTo){
 
-			if(linkTo.equals("1")){
-				return "6/first";
-			}else{
-				return "6/second";
-			}
+		if(linkTo.equals("1")){
+			return "6/first";
+
+		}else if(linkTo.equals("2")){
+			return "6/second";
+
+		}else{
+			throw new RuntimeException("Invalid number was passed to parameter.");
 			
+		}
+
 	}
 }

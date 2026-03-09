@@ -6,13 +6,24 @@ public class BaseballDomain {
 	private Integer id;
 	private String name;
 	private Date establishedDate;
-	public BaseballDomain() {}
-	
-	public BaseballDomain(Integer id, String name, Date establishedDate) {
+	private Integer stadiumId;
+
+	public BaseballDomain(Integer id, String name, Date establishedDate, Integer stadiumId) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.establishedDate = establishedDate;
+		this.stadiumId = stadiumId;
+	}
+	
+	public BaseballDomain() {}
+
+	public Integer getStadiumId() {
+		return stadiumId;
+	}
+
+	public void setStadiumId(Integer stadiumId) {
+		this.stadiumId = stadiumId;
 	}
 
 	public Integer getId() {

@@ -17,11 +17,13 @@
 		<th>ID</th>
 		<th>球団名</th>
 		<th>設立年月日</th>
+		<th>スタジアム</th>
 	</tr>
 	<tr th:each="team:${teams}">
 		<td><span th:text="${team.id}"></span></td>
 		<td><span th:text="${team.name}"></span></td>
 		<td><span th:text="${team.establishedDate}"></span></td>
+		<td><span th:text="${team.stadiumId}"></span></td>
 	</tr>
 </table>
 </body>
